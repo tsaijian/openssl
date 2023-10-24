@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 PACKAGE="openssl"
 PACKAGE_FIRST_CHAR=$(printf "%s" "$PACKAGE" | cut -c1)
-VERSION=3.0.9
+VERSION=3.0.11
 REVISION=1
 
 
