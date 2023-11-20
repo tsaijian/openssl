@@ -1,8 +1,8 @@
 #!/bin/bash -ex
 PACKAGE="openssl"
 PACKAGE_FIRST_CHAR=$(printf "%s" "$PACKAGE" | cut -c1)
-VERSION=3.0.11
-REVISION=1
+VERSION=3.0.12
+REVISION=2
 
 
 wget http://deb.debian.org/debian/pool/main/$PACKAGE_FIRST_CHAR/$PACKAGE/${PACKAGE}_$VERSION-$REVISION.debian.tar.xz
