@@ -14,4 +14,5 @@ tar xf ${PACKAGE}_$VERSION.orig.tar.gz --strip 1
 rm ${PACKAGE}_$VERSION.orig.tar.gz
 
 sed -i '/CONFARGS *=/ s/$/ enable-fips/' debian/rules
+sed -i 's/enable-unit-test/no-tests/g' debian/rules
 echo "usr/lib/ssl/fipsmodule.cnf" >> debian/openssl.install
